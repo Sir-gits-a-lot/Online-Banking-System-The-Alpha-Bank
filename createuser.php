@@ -8,8 +8,6 @@
     <link rel="stylesheet" type="text/css" href="css/table.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/createuser.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -49,43 +47,8 @@
       </div>
       <div class="screen-body">
         <div class="screen-body-item left">
-
-<div class="profile-images-card">
-	<div class="profile-images" >
-		<img src="img/user3.jpg" id="upload-img">
-	</div>
-  <br>
-	<div class="custom-file">
-		<label for="fileupload">Upload Image</label>
-		<input type="file" id="fileupload">
-
-    <button onclick="myFunction()">Upload</button>
-
-<script>
-function myFunction() {
-  alert("Profile Photo Uploaded successfully");
-}
-</script>
-	</div>
-</div>
-
-
-
-<div style=" border: #cf0a1e; border-radius: 50%; " >
-
-<script src="js/jquery-latest.min.js"></script>
-<script>
-	$(function(){
-		$("#fileupload").change(function(event) {
-			var x = URL.createObjectURL(event.target.files[0]);
-			$("#upload-img").attr("src",x);
-			console.log(event);
-		});
-	})
-</script>
-</div>
-<hr>
-
+          <img class="img-fluid" src="img/user3.jpg" style="border: none; border-radius: 50%;">
+        </div>
         <div class="screen-body-item">
           <form class="app-form" method="post">
             <div class="app-form-group">
